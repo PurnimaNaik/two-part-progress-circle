@@ -27,6 +27,7 @@ const TwoPartProgressCircle = ({
   text,
   textColor,
   textSize,
+  circleRadius,
   //   partCount,
   // percent,
   // radius,
@@ -145,8 +146,9 @@ const TwoPartProgressCircle = ({
     }
   }
   const textStyle = { ...styles.text, color:textColor, fontSize:textSize }
+  const container = { ...styles.markerContainer, height:circleRadius, width:circleRadius, borderRadius:circleRadius }
   return (
-    <View style={styles.markerContainer}>
+    <View style={container}>
       {arcLayers}
       <View style={styles.innerCircle} />
       <Text style={textStyle}>{text}</Text>
@@ -180,7 +182,7 @@ const styles =StyleSheet.create({
     alignItems: 'center',
     height: 45,
     width: 45,
-    borderRadius: 43,
+    borderRadius: 45,
     shadowColor: 'black',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.1,
