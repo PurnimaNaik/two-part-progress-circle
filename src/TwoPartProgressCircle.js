@@ -70,10 +70,7 @@ else{
       const SectorOneMeasure1 = (sectorOnePercentage * totalAndGaps) / 100;
       const sectorTwoMeasure1 = (sectorTwoPercentage * totalAndGaps) / 100;
       const remainingSectorMeasure1 = (remainingPercentage * totalAndGaps) / 100;
-    
-      // const SectorOneMeasure1 = sectorOnePercentage;
-      // const sectorTwoMeasure1 = sectorTwoPercentage;
-      // const remainingSectorMeasure1 = remainingPercentage;
+
     
       const eachGapSectorMeasure1 =
         spacerCount != 0 ? spacerAmount / spacerCount : 0; //++
@@ -87,13 +84,8 @@ else{
         sectorTwoMeasureStart = SectorOneMeasure;
       }
     
-      // const remainingSectorMeasureStart = sectorTwoMeasureStart + sectorTwoMeasure + eachGapSectorMeasure1;
     
       sectorTwoMeasureStartString = sectorTwoMeasureStart + 'deg';
-      // remainingSectorMeasureStartString = remainingSectorMeasureStart + 'deg';
-    
-      debugger;
-      // console.log("------",categoryOnePercentage, categoryTwoPercentage, category1Degree, category2Degree);
       arcLayers = [];
     
       for (var i = 0; i < partCount; i++) {
@@ -152,25 +144,6 @@ else{
   
 };
 
-// default values for props
-// TwoPartProgressCircle.defaultProps = {
-//   percent: 0,
-//   radius: 25,
-//   bgRingWidth: 2,
-//   progressRingWidth: 2,
-//   ringColor: 'red',
-//   ringBgColor: 'white',
-//   textFontSize: 15,
-//   textFontWeight: 'bold',
-//   clockwise: true,
-//   bgColor: 'white',
-//   startDegrees: 0
-// }
-
-/**
- * offsetLayer has transform:[{rotateZ: '-135deg'}] since
- * the offsetLayer rotation is fixed by us.
- **/
 const styles =StyleSheet.create({
   markerContainer: {
     backgroundColor: 'white',
