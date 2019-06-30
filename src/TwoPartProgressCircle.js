@@ -28,6 +28,7 @@ const TwoPartProgressCircle = ({
   textColor,
   textSize,
   circleRadius,
+  distanceFromEdge
   //   partCount,
   // percent,
   // radius,
@@ -113,7 +114,7 @@ const TwoPartProgressCircle = ({
             >
               <ProgressCircleBase
                 percent={SectorOneMeasure1}
-                radius={20}
+                radius={(circleRadius/2)-distanceFromEdge}
                 borderWidth={2}
                 color={categoryOneColor}
                 shadowColor="white"
@@ -133,7 +134,7 @@ const TwoPartProgressCircle = ({
             >
               <ProgressCircleBase
                 percent={sectorTwoMeasure1}
-                radius={20}
+                radius={(circleRadius/2)-distanceFromEdge}
                 borderWidth={2}
                 color={categoryTwoColor}
                 shadowColor="#C9C9C9" //not causing issue

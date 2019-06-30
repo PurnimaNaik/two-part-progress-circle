@@ -31,7 +31,8 @@ export default class App extends Component<Props> {
           text='hi'
           textColor='black'
           textSize={15}
-          circleRadius={45}
+          circleRadius={60}
+          distanceFromEdge={3}
         />
       </View>
     );
