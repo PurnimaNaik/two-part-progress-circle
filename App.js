@@ -23,16 +23,17 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <TwoPartProgressCircle
-          categoryOnePercentage={50}
+          categoryOnePercentage={20}
           categoryOneColor='green'
           categoryTwoPercentage={50}
-          categoryTwoColor='orange'
+          categoryTwoColor='blue'
           spacer={true}
           text='hi'
           textColor='black'
           textSize={15}
           circleRadius={60}
           distanceFromEdge={3}
+          ringWidth={2}
         />
       </View>
     );
