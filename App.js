@@ -31,7 +31,7 @@ export default class App extends Component<Props> {
 
 
           text='hi'
-          textColor='red'
+          textColor='black'
           textSize={15}
         />
       </View>

@@ -12,7 +12,7 @@ var markerStyle;
 var total;
 var available;
 var sectorTwo;
-
+var textColorProp;
 var sectorOnePercentage;
 var sectorTwoPercentage;
 var remainingPercentage;
@@ -25,8 +25,8 @@ const TwoPartProgressCircle = ({
   categoryTwoColor,
   spacer,
   text,
-//   textColor,
-//   textSize,
+  textColor,
+  textSize,
   //   partCount,
   // percent,
   // radius,
@@ -41,7 +41,6 @@ const TwoPartProgressCircle = ({
   // startDegrees,
 }) => {
   var partCount = 2;
-
   sectorOnePercentage = categoryOnePercentage;
   sectorTwoPercentage = categoryTwoPercentage;
   remainingPercentage = 100 - (categoryOnePercentage + categoryTwoPercentage);
@@ -98,7 +97,6 @@ const TwoPartProgressCircle = ({
 
   sectorTwoMeasureStartString = sectorTwoMeasureStart + 'deg';
   // remainingSectorMeasureStartString = remainingSectorMeasureStart + 'deg';
-  markerStyle = styles.markerStyle;
 
   debugger;
   // console.log("------",categoryOnePercentage, categoryTwoPercentage, category1Degree, category2Degree);
@@ -146,12 +144,12 @@ const TwoPartProgressCircle = ({
       );
     }
   }
-
+  const textStyle = { ...styles.text, color:textColor, fontSize:textSize }
   return (
     <View style={styles.markerContainer}>
       {arcLayers}
       <View style={styles.innerCircle} />
-      <Text>{text}</Text>
+      <Text style={textStyle}>{text}</Text>
     </View>
   );
 };
@@ -175,7 +173,7 @@ const TwoPartProgressCircle = ({
  * offsetLayer has transform:[{rotateZ: '-135deg'}] since
  * the offsetLayer rotation is fixed by us.
  **/
-const styles = StyleSheet.create({
+const styles =StyleSheet.create({
   markerContainer: {
     backgroundColor: 'white',
     justifyContent: 'center',
@@ -196,6 +194,7 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     justifyContent: 'center',
     alignItems: 'center',
+    
   },
   categoryOne:{
     opacity: 1,
@@ -205,6 +204,10 @@ const styles = StyleSheet.create({
     opacity: 0.5,
     position: 'absolute' 
   },
+  text:{
+    // color: textColor,
+  }
 });
+
 
 export default TwoPartProgressCircle;
