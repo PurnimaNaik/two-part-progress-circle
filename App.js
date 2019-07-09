@@ -205,7 +205,7 @@ export default class App extends Component<Props> {
               textSize={15}
               textWeight="500"
               circleRadius={80}
-              distanceFromEdge={10}
+              distanceFromEdge={5}
               ringWidth={2}
             />
             <Text style={styles.text}>distanceFromEdge={10}</Text>

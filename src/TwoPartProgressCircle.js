@@ -115,7 +115,11 @@ else{
               {
                 <View
                   style={[styles.categoryTwo,  {transform: [{rotateZ: sectorTwoMeasureStartString}] }]}
+                  needsOffscreenAlphaCompositing
                 >
+                {/* <View 
+                NeedsOffscreenAlphaCompositing={true}
+                > */}
                   <ProgressCircleBase
                     percent={sectorTwoMeasure1}
                     radius={(circleRadius/2)-distanceFromEdge}
@@ -124,6 +128,7 @@ else{
                     shadowColor="#C9C9C9" //not causing issue
                     bgColor="#fff"
                   />
+                  {/* </View> */}
                 </View>
               }
             </React.Fragment>
@@ -173,7 +178,8 @@ const styles =StyleSheet.create({
   },
   categoryTwo:{
     opacity: 0.5,
-    position: 'absolute' 
+    position: 'absolute' ,
+    // mNeedsOffscreenAlphaCompositing:true,
   },
   text:{
     // color: textColor,

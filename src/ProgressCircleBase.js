@@ -89,6 +89,7 @@ export default class PercentageCircle extends Component {
         backgroundColor: needHalfCircle2
           ? props.color
           : props.shadowColor,
+          
       },
     }
   }
