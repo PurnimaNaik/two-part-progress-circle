@@ -66,15 +66,15 @@ const TwoPartProgressCircle = ({
     }
 
     const totalAndGaps = 100 - spacerAmount;
-    const SectorOneMeasure1 = (sectorOnePercentage * totalAndGaps) / 100;
-    const sectorTwoMeasure1 = (sectorTwoPercentage * totalAndGaps) / 100;
-    const remainingSectorMeasure1 = (remainingPercentage * totalAndGaps) / 100;
+    const SectorOneMeasurePercent = (sectorOnePercentage * totalAndGaps) / 100;
+    const sectorTwoMeasurePercent = (sectorTwoPercentage * totalAndGaps) / 100;
+    const remainingSectorMeasurePercent = (remainingPercentage * totalAndGaps) / 100;
 
     const eachGapSectorMeasure1 =
       spacerCount != 0 ? spacerAmount / spacerCount : 0; //++
-    SectorOneMeasure = (360 * SectorOneMeasure1) / totalAndGaps;
-    sectorTwoMeasure = (360 * sectorTwoMeasure1) / totalAndGaps;
-    remainingSectorMeasure = (360 * remainingSectorMeasure1) / totalAndGaps;
+    SectorOneMeasure = (360 * SectorOneMeasurePercent) / totalAndGaps;
+    sectorTwoMeasure = (360 * sectorTwoMeasurePercent) / totalAndGaps;
+    remainingSectorMeasure = (360 * remainingSectorMeasurePercent) / totalAndGaps;
     var sectorTwoMeasureStart;
     if (categoryOnePercentage > 50) {
       sectorTwoMeasureStart = SectorOneMeasure - spacerAmount;
@@ -92,7 +92,7 @@ const TwoPartProgressCircle = ({
             {
               <View style={styles.categoryOne}>
                 <ProgressCircleBase
-                  percent={SectorOneMeasure1}
+                  percent={SectorOneMeasurePercent}
                   radius={circleRadius / 2 - distanceFromEdge}
                   borderWidth={ringWidth}
                   color={categoryOneColor}
@@ -115,7 +115,7 @@ const TwoPartProgressCircle = ({
                 needsOffscreenAlphaCompositing
               >
                 <ProgressCircleBase
-                  percent={sectorTwoMeasure1}
+                  percent={sectorTwoMeasurePercent}
                   radius={circleRadius / 2 - distanceFromEdge}
                   borderWidth={ringWidth}
                   color={categoryTwoColor}
