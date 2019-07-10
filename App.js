@@ -20,9 +20,9 @@ export default class App extends Component<Props> {
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={50}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={50}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="100%"
@@ -39,9 +39,9 @@ export default class App extends Component<Props> {
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={50}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={50}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={5}
               text="100%"
@@ -52,7 +52,7 @@ export default class App extends Component<Props> {
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>spacerValue={5}</Text>
+            <Text style={styles.text}>spacerValue=5</Text>
           </View>
         </View>
 
@@ -60,9 +60,9 @@ export default class App extends Component<Props> {
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={50}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={50}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={false}
               spacerValue={2}
               text="100%"
@@ -79,9 +79,9 @@ export default class App extends Component<Props> {
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={0}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={40}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="4/10"
@@ -97,9 +97,9 @@ export default class App extends Component<Props> {
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={100}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={0}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="100%"
@@ -176,9 +176,9 @@ export default class App extends Component<Props> {
           <View style={styles.largeProgreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={55}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={20}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="75%"
@@ -189,15 +189,15 @@ export default class App extends Component<Props> {
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>circleRadius={80}</Text>
+            <Text style={styles.text}>circleRadius=80</Text>
           </View>
 
           <View style={styles.largeProgreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={55}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={20}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="75%"
@@ -205,17 +205,17 @@ export default class App extends Component<Props> {
               textSize={15}
               textWeight="500"
               circleRadius={80}
-              distanceFromEdge={5}
+              distanceFromEdge={10}
               ringWidth={2}
             />
-            <Text style={styles.text}>distanceFromEdge={10}</Text>
+            <Text style={styles.text}>distanceFromEdge=10</Text>
           </View>
           <View style={styles.largeProgreeCircleContainer}>
             <TwoPartProgressCircle
               categoryOnePercentage={55}
-              // categoryOneColor='green'
+              categoryOneColor='#12CC32'
               categoryTwoPercentage={20}
-              // categoryTwoColor='blue'
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
               text="75%"
@@ -226,7 +226,7 @@ export default class App extends Component<Props> {
               distanceFromEdge={3}
               ringWidth={5}
             />
-            <Text style={styles.text}>ringWidth={5}</Text>
+            <Text style={styles.text}>ringWidth=5</Text>
           </View>
         </View>
       </View>
@@ -238,46 +238,45 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#F7F7F7'
+    
   },
   rowContainer: {
-    // alignItems: 'stretch',
-    // justifyContent: 'space-around',
+    justifyContent: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
     marginBottom: 55,
-    width: Dimensions.get('window').width - 100,
+    width: Dimensions.get('window').width
   },
   progreeCircleContainer: {
     padding: 0,
     width: 120,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   largeProgreeCircleContainer: {
     padding: 0,
-    width: 120,
+    width: 125,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   text: {
     fontSize: 11,
-    textAlign: 'center',
+    textAlign: 'center'
   },
   headerContainer:{
-    // marginTop:-90,
     paddingBottom:50,
     textAlign: 'center',
     alignItems: 'center',
-    justifyContent: 'center',
-    // width: Dimensions.get('window').width - 100,
+    justifyContent: 'center'
   },
   header:{
     fontSize: 25,
     fontWeight: 'bold',
     paddingBottom:10,
+    color:'black'
   },
   subHeader:{
     fontSize: 20,
-    // fontWeight: 'bold',
   }
 });
