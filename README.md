@@ -1,8 +1,9 @@
 # two-part-progress-circle
 iOS and android compatible, react native progress bar to show two part progress of any process.
-
-![iOS example](https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/iOS_Screenshot.png)
-![android example](https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/Android_Screenshot.png)
+<p float="left" align="center">
+<img alt="ios screenshot" src="https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/iOS_Screenshot.png" width="40%">
+<img alt="android screenshot" src="https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/Android_Screenshot.png" width="40%">
+</p>
 
 ## Features
 - Custom colors
@@ -46,8 +47,25 @@ import TwoPartProgressCircle from './src/TwoPartProgressCircle';
 
 ## Props
 
+Name | Description | Type |Default |
+--- | --- | --- | --- |
+categoryOnePercentage | percentage of first category | Number | 20 | 
+categoryTwoPercentage | percentage of first category | Number | 50 | 
+categoryOneColor | color of first category arc | String | #12CC32 | 
+categoryTwoColor | color of second category arc | String | #0080ED | 
+circleRadius | size of the progress circle | Number | 60 | 
+distanceFromEdge | gap between the progress ring and background circle | Number | 3 | 
+ringWidth | thickness of progress ring | Number | 2 | 
+spacer | presence or absence of gap between the arcs | Boolean | true | 
+spacerValue | amount of gap between the arcs | Number | 2 | 
+text | text to display at the center of the circle | String | 70% | 
+textSize | size of text | Number | 15 | 
+textColor | color of text | String | black | 
+textWeight | font weight of text | String | 500 | 
+
+
 ## Author
-Purnima Naik
+[Purnima Naik](https://purnimanaik.github.io)
 
 ## Implementation Details
 
