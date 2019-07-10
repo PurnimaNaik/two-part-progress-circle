@@ -1,6 +1,7 @@
-# two-part-progress-circle
+# Two Part Progress Circle
+
 iOS and android compatible, react native progress bar to show two part progress of any process.
-<p float="left" align="center">
+<p float="left">
 <img alt="ios screenshot" src="https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/iOS_Screenshot.png" width="40%">
 <img alt="android screenshot" src="https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/src/Images/Android_Screenshot.png" width="40%">
 </p>
@@ -68,7 +69,7 @@ textWeight | font weight of text | String | 500 |
 [Purnima Naik](https://purnimanaik.github.io)
 
 ## Implementation Details
-
+[Example](https://github.com/PurnimaNaik/two-part-progress-circle/blob/master/App.js)
 
 ## License
 MIT
