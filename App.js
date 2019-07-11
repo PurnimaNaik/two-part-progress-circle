@@ -13,19 +13,14 @@ export default class App extends Component<Props> {
         </View>
         <View style={styles.rowContainer}>
           <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle />
-            <Text style={styles.text}>default</Text>
-          </View>
-
-          <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle
+          <TwoPartProgressCircle
               categoryOnePercentage={50}
               categoryOneColor='#12CC32'
-              categoryTwoPercentage={50}
+              categoryTwoPercentage={12.5}
               categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
-              text="100%"
+              text="25/40"
               textColor="black"
               textSize={15}
               textWeight="500"
@@ -33,7 +28,32 @@ export default class App extends Component<Props> {
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>spacer=true</Text>
+            <Text style={styles.texti}>In progress</Text>
+            <Text style={styles.text}>A-ve signup:20</Text>
+            <Text style={styles.text}>O-ve signup:5</Text>
+            <Text style={styles.text}>total signup:25</Text>
+          </View>
+
+          <View style={styles.progreeCircleContainer}>
+            <TwoPartProgressCircle
+              categoryOnePercentage={75}
+              categoryOneColor='#12CC32'
+              categoryTwoPercentage={25}
+              categoryTwoColor='#0080ED'
+              spacer={true}
+              spacerValue={2}
+              text="40/40"
+              textColor="black"
+              textSize={15}
+              textWeight="500"
+              circleRadius={60}
+              distanceFromEdge={3}
+              ringWidth={2}
+            />
+            <Text style={styles.texti}>Study Limit reached</Text>
+            <Text style={styles.text}>A-ve signup:30</Text>
+            <Text style={styles.text}>O-ve signup:10</Text>
+            <Text style={styles.text}>total signup:40</Text>
           </View>
 
           <View style={styles.progreeCircleContainer}>
@@ -58,41 +78,47 @@ export default class App extends Component<Props> {
 
         <View style={styles.rowContainer}>
           <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle
-              categoryOnePercentage={50}
+          <TwoPartProgressCircle
+              categoryOnePercentage={20}
               categoryOneColor='#12CC32'
-              categoryTwoPercentage={50}
+              categoryTwoPercentage={4}
               categoryTwoColor='#0080ED'
-              spacer={false}
+              spacer={true}
               spacerValue={2}
-              text="100%"
+              text="120/500"
               textColor="black"
-              textSize={15}
+              textSize={10}
               textWeight="500"
               circleRadius={60}
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>spacer=false</Text>
+            <Text style={styles.texti}>In progress</Text>
+            <Text style={styles.text}>Monitors delivered:100</Text>
+            <Text style={styles.text}>Keyboards delivered:20</Text>
+            <Text style={styles.text}>total units delivered:120</Text>
           </View>
 
           <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle
-              categoryOnePercentage={0}
+          <TwoPartProgressCircle
+              categoryOnePercentage={50}
               categoryOneColor='#12CC32'
-              categoryTwoPercentage={40}
+              categoryTwoPercentage={50}
               categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
-              text="4/10"
-              textColor="#FF8800"
-              textSize={15}
-              textWeight="bold"
+              text="500/500"
+              textColor="black"
+              textSize={10}
+              textWeight="500"
               circleRadius={60}
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>Text styles</Text>
+            <Text style={styles.texti}>Delivery complete</Text>
+            <Text style={styles.text}>Monitors delivered:250</Text>
+            <Text style={styles.text}>Keyboards delivered:250</Text>
+            <Text style={styles.text}>total units delivered:500</Text>
           </View>
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
@@ -116,41 +142,49 @@ export default class App extends Component<Props> {
 
         <View style={styles.rowContainer}>
           <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle
-              categoryOnePercentage={50}
-              categoryOneColor="#FF0000"
-              categoryTwoPercentage={50}
-              categoryTwoColor="#FE4E01"
+          <TwoPartProgressCircle
+              categoryOnePercentage={20}
+              categoryOneColor='#12CC32'
+              categoryTwoPercentage={20}
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
-              text="100%"
+              text="2|2|6"
               textColor="black"
-              textSize={15}
+              textSize={12}
               textWeight="500"
               circleRadius={60}
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>Colors</Text>
+            <Text style={styles.texti}>Store A</Text>
+            <Text style={styles.text}>Active:2</Text>
+            <Text style={styles.text}>Idle:2</Text>
+            <Text style={styles.text}>Closed:6</Text>
+            <Text style={styles.text}>Total:10</Text>
           </View>
 
           <View style={styles.progreeCircleContainer}>
-            <TwoPartProgressCircle
-              categoryOnePercentage={75}
-              categoryOneColor="#9200FF"
-              categoryTwoPercentage={25}
-              categoryTwoColor="#FF0093"
+          <TwoPartProgressCircle
+              categoryOnePercentage={20}
+              categoryOneColor='#12CC32'
+              categoryTwoPercentage={70}
+              categoryTwoColor='#0080ED'
               spacer={true}
               spacerValue={2}
-              text="done!"
-              textColor="#00A808"
-              textSize={14}
-              textWeight="bold"
+              text="2|7|1"
+              textColor="black"
+              textSize={12}
+              textWeight="500"
               circleRadius={60}
               distanceFromEdge={3}
               ringWidth={2}
             />
-            <Text style={styles.text}>Percentage combinations</Text>
+            <Text style={styles.texti}>Store B</Text>
+            <Text style={styles.text}>Active:2</Text>
+            <Text style={styles.text}>Idle:7</Text>
+            <Text style={styles.text}>Closed:1</Text>
+            <Text style={styles.text}>Total:10</Text>
           </View>
           <View style={styles.progreeCircleContainer}>
             <TwoPartProgressCircle
@@ -242,15 +276,15 @@ const styles = StyleSheet.create({
     
   },
   rowContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     flexDirection: 'row',
     marginBottom: 55,
     width: Dimensions.get('window').width
   },
   progreeCircleContainer: {
     padding: 0,
-    width: 120,
+    width: 165,
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -263,6 +297,11 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 11,
     textAlign: 'center'
+  },
+  texti: {
+    fontSize: 13,
+    textAlign: 'center',
+    fontWeight:'bold',
   },
   headerContainer:{
     paddingBottom:50,
