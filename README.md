@@ -25,7 +25,7 @@
 
 ## Usage
 ```
-import TwoPartProgressCircle from './src/TwoPartProgressCircle';
+import TwoPartProgressCircle from 'two-part-progress-circle';
 
 //default
  <TwoPartProgressCircle /> 
